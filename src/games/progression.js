@@ -1,5 +1,5 @@
-import getRandomNumber from '../utils/random.js';
-import runEngine from '../index.js';
+import getRandomNumber from '../utils/random.js'
+import runEngine from '../index.js'
 
 const description = 'What number is missing in the progression?';
 
