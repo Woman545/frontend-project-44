@@ -7,7 +7,7 @@ const getGcd = (a, b) => {
   let x = a;
   let y = b;
 
-  while (b !== 0) {
+  while (y !== 0) {
     [x, y] = [y, x % y];
   }
   return x;
@@ -16,7 +16,7 @@ const getGcd = (a, b) => {
 const generateRound = () => {
   const num1 = getRandomNumber(1, 100);
   const num2 = getRandomNumber(1, 100);
-  const question = `${num1} ${num2}`;
+  const question = `Question: ${num1} ${num2}`;
   const correctAnswer = String(getGcd(num1, num2));
   return [question, correctAnswer];
 };
