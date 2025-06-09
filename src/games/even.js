@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync.js';
+import readlineSync from 'readline-sync';
 import greetUser from '../cli.js';
 
 const isEven = (number) => number % 2 === 0;

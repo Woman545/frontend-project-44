@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _readlineSync = _interopRequireDefault(require("readline-sync.js"));
+var _readlineSync = _interopRequireDefault(require("readline-sync"));
 
 var _cli = _interopRequireDefault(require("../cli.js"));
 
