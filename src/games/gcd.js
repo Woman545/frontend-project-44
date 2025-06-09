@@ -1,7 +1,7 @@
-import getRandomNumber from '../utils/random.js';
-import runGame from '../index.js';
+import getRandomNumber from '../utils/random';
+import runGame from '../index';
 
-const description = 'Find the greatest common divisor of given numbers.';
+const description = "Find the greatest common divisor of given numbers.";
 
 const getGcd = (a, b) => {
   let x = a;

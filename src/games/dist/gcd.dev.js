@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _random = _interopRequireDefault(require("../utils/random.js"));
+var _random = _interopRequireDefault(require("../utils/random"));
 
-var _index = _interopRequireDefault(require("../index.js"));
+var _index = _interopRequireDefault(require("../index"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var description = 'Find the greatest common divisor of given numbers.';
+var description = "Find the greatest common divisor of given numbers.";
 
 var getGcd = function getGcd(a, b) {
   var x = a;

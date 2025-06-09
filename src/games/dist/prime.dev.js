@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _random = _interopRequireDefault(require("../utils/random.js"));
+var _random = _interopRequireDefault(require("../utils/random"));
 
-var _index = _interopRequireDefault(require("../index.js"));
+var _index = _interopRequireDefault(require("../index"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,7 +24,7 @@ var isPrime = function isPrime(num) {
 var generateRound = function generateRound() {
   var number = (0, _random["default"])(1, 100);
   var question = number.toString();
-  var correctAnswer = isPrime(number) ? 'yes' : 'no';
+  var correctAnswer = isPrime(number) ? "yes" : "no";
   return [question, correctAnswer];
 };
 

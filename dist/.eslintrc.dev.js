@@ -1,17 +1,32 @@
 "use strict";
 
 module.exports = {
-  "extends": ['airbnb-base', 'prettier'],
   env: {
     es2022: true,
     node: true
   },
-  rules: {
-    'no-console': 'off',
-    'import/extensions': 'off',
-    '@stylistic/semi': ['warn'],
-    '@stylistic/quotes': ['warn'],
-    '@stylistic/max-statements-per-line': ['warn']
+  parserOptions: {
+    ecmaVersion: 2022,
+    sourceType: 'module'
   },
-  plugins: ['prettier', 'stylistic']
+  "extends": ['airbnb-base', 'prettier'],
+  plugins: ['prettier'],
+  rules: {
+    'semi': ['error', 'always'],
+    'quotes': ['error', 'single', {
+      avoidEscape: true
+    }],
+    'max-statements-per-line': ['error', {
+      max: 1
+    }],
+    'brace-style': ['error', '1tbs'],
+    'quote-props': ['error', 'as-needed'],
+    'comma-dangle': ['error', 'never'],
+    'eol-last': ['error', 'always'],
+    'no-console': 'warn',
+    'import/extensions': ['error', 'never', {
+      js: 'never'
+    }],
+    'prettier/prettier': ['error']
+  }
 };

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 
-var _calc = _interopRequireDefault(require("../src/games/calc.js"));
+var _calc = _interopRequireDefault(require("../src/games/calc"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

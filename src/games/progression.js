@@ -1,7 +1,7 @@
-import getRandomNumber from '../utils/random.js';
-import runEngine from '../index.js';
+import getRandomNumber from '../utils/random';
+import runEngine from '../index';
 
-const description = 'What number is missing in the progression?';
+const description = "What number is missing in the progression?";
 
 const generateRound = () => {
   const start = getRandomNumber(1, 10);
@@ -15,13 +15,11 @@ const generateRound = () => {
 
   const hiddenIndex = getRandomNumber(0, length - 1);
   const correctAnswer = String(progression[hiddenIndex]);
-  progression[hiddenIndex] = '..';
+  progression[hiddenIndex] = "..";
 
   const question = progression.join(' ');
 
   return [question, correctAnswer];
 };
 
-export default () => {
-  return runEngine(description, generateRound);
-};
+export default () => runEngine(description, generateRound);

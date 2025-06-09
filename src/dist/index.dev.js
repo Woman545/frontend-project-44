@@ -20,9 +20,9 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var roundsCount = 3;
 
 var _default = function _default(description, generateRound) {
-  console.log('Welcome to the Brain Games!');
+  console.log("Welcome to the Brain Games!");
 
-  var name = _readlineSync["default"].question('May I have your name? ');
+  var name = _readlineSync["default"].question("May I have your name? ");
 
   console.log("Hello, ".concat(name, "!"));
   console.log(description);
@@ -35,7 +35,7 @@ var _default = function _default(description, generateRound) {
 
     console.log("Question: ".concat(question));
 
-    var userAnswer = _readlineSync["default"].question('Your answer: ');
+    var userAnswer = _readlineSync["default"].question("Your answer: ");
 
     if (userAnswer !== correctAnswer) {
       console.log("'".concat(userAnswer, "' is wrong answer ;(. Correct answer was '").concat(correctAnswer, "'."));
@@ -43,7 +43,7 @@ var _default = function _default(description, generateRound) {
       return;
     }
 
-    console.log('Correct!');
+    console.log("Correct!");
   }
 
   console.log("Congratulations, ".concat(name, "!"));

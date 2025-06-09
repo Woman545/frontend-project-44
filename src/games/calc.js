@@ -1,7 +1,7 @@
-import getRandomNumber from '../utils/random.js';
-import runGameEngine from '../index.js';
+import getRandomNumber from '../utils/random';
+import runGameEngine from '../index';
 
-const description = 'What is the result of the expression?';
+const description = "What is the result of the expression?";
 const operators = ['+', '-', '*'];
 
 const calculate = (num1, num2, operator) => {

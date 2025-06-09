@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _random = _interopRequireDefault(require("../utils/random.js"));
+var _random = _interopRequireDefault(require("../utils/random"));
 
-var _index = _interopRequireDefault(require("../index.js"));
+var _index = _interopRequireDefault(require("../index"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var description = 'What is the result of the expression?';
+var description = "What is the result of the expression?";
 var operators = ['+', '-', '*'];
 
 var calculate = function calculate(num1, num2, operator) {
