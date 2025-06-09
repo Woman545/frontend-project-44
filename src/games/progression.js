@@ -1,24 +1,27 @@
-import getRandomNumber from '../utils/random.js'
-import runEngine from '../index.js'
+import getRandomNumber from '../utils/random.js';
+import runEngine from '../index.js';
 
-const description = 'What number is missing in the progression?'
+const description = 'What number is missing in the progression?';
 
 const generateRound = () => {
-  const start = getRandomNumber(1, 10)
-  const step = getRandomNumber(2, 5)
-  const length = 10
+  const start = getRandomNumber(1, 10);
+  const step = getRandomNumber(2, 5);
+  const length = 10;
 
-  const progression = []
+  const progression = [];
   for (let i = 0; i < length; i += 1) {
-    progression.push(start + i * step)
+    progression.push(start + i * step);
   }
 
-  const hiddenIndex = getRandomNumber(0, length - 1)
-  const correctAnswer = String(progression[hiddenIndex])
-  progression[hiddenIndex] = '..'
-  const question = progression.join(' ')
+  const hiddenIndex = getRandomNumber(0, length - 1);
+  const correctAnswer = String(progression[hiddenIndex]);
+  progression[hiddenIndex] = '..';
 
-  return [question, correctAnswer]
-}
+  const question = progression.join(' ');
 
-export default () => runEngine(description, generateRound)
+  return [question, correctAnswer];
+};
+
+export default () => {
+  return runEngine(description, generateRound);
+};

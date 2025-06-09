@@ -30,7 +30,7 @@ var generateRound = function generateRound() {
 
 var _default = function _default() {
   var description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  (0, _index["default"])(description, generateRound);
+  return (0, _index["default"])(description, generateRound);
 };
 
 exports["default"] = _default;
