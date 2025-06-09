@@ -1,20 +1,22 @@
-Object.defineProperty(exports, '__esModule', {
-  value: true,
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
-const _readlineSync = _interopRequireDefault(require('readline-sync'));
+var _readlineSync = _interopRequireDefault(require("readline-sync"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-const greetUser = function greetUser() {
+var greetUser = function greetUser() {
   console.log('Welcome to the Brain Games!');
 
-  const userName = _readlineSync.default.question('May I have your name? ');
+  var userName = _readlineSync["default"].question('May I have your name? ');
 
-  console.log('Hello, '.concat(userName, '!'));
+  console.log("Hello, ".concat(userName, "!"));
   return userName;
 };
 
-const _default = greetUser;
-exports.default = _default;
+var _default = greetUser;
+exports["default"] = _default;
