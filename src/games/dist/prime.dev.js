@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _random = _interopRequireDefault(require("../utils/random.js"));
 
-var _index = _interopRequireDefault(require("../index"));
+var _index = _interopRequireDefault(require("../index.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
