@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 module.exports = {
   env: {
@@ -29,4 +29,4 @@ module.exports = {
     }],
     'prettier/prettier': ['error']
   }
-};
+}

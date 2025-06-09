@@ -1,9 +1,9 @@
-"use strict";
+"use strict"
 
 Object.defineProperty(exports, "__esModule", {
   value: true
-});
-exports["default"] = void 0;
+})
+exports["default"] = void 0
 var _default = [require('eslint-config-airbnb-base'), require('eslint-config-prettier'), {
   languageOptions: {
     globals: {
@@ -21,5 +21,5 @@ var _default = [require('eslint-config-airbnb-base'), require('eslint-config-pre
     '@stylistic/max-statements-per-line': ['warn']
   },
   plugins: ['prettier', 'stylistic']
-}];
-exports["default"] = _default;
+}]
+exports["default"] = _default
