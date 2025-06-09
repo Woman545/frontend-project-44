@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-"use strict";
+"use strict"
 
-var _even = _interopRequireDefault(require("../src/games/even.js"));
+var _even = _interopRequireDefault(require("../src/games/even.js"))
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj } }
 
-(0, _even["default"])();
+(0, _even["default"])()

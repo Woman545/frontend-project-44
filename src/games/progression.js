@@ -20,6 +20,6 @@ const generateRound = () => {
   const question = progression.join(' ')
 
   return [question, correctAnswer]
-};
+}
 
 export default () => runEngine(description, generateRound)

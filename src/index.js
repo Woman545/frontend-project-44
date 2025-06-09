@@ -16,13 +16,13 @@ export default (description, generateRound) => {
     if (userAnswer !== correctAnswer) {
       console.log(
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
-      );
-      console.log(`Let's try again, ${name}!`);
-      return;
+      )
+      console.log(`Let's try again, ${name}!`)
+      return
     }
 
     console.log("Correct!")
   }
 
   console.log(`Congratulations, ${name}!`)
-};
+}

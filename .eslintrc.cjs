@@ -24,4 +24,4 @@ module.exports = {
     'import/extensions': ['error', 'never', { js: 'never' }],
     'prettier/prettier': ['error'],
   },
-};
+}
