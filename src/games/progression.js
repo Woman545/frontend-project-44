@@ -1,7 +1,7 @@
 import getRandomNumber from '../utils/random.js'
 import runEngine from '../index.js'
 
-const description = "What number is missing in the progression?"
+const description = 'What number is missing in the progression?'
 
 const generateRound = () => {
   const start = getRandomNumber(1, 10)
@@ -15,7 +15,7 @@ const generateRound = () => {
 
   const hiddenIndex = getRandomNumber(0, length - 1)
   const correctAnswer = String(progression[hiddenIndex])
-  progression[hiddenIndex] = ".."
+  progression[hiddenIndex] = '..'
 
   const question = progression.join(' ')
 

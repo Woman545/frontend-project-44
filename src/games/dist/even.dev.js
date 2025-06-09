@@ -16,7 +16,7 @@ var isEven = function isEven(number) {
 };
 
 var _default = function _default() {
-  console.log("Welcome to the Brain Games!");
+  console.log('Welcome to the Brain Games!');
   var userName = (0, _cli["default"])();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   var correctAnswers = 0;
@@ -25,18 +25,18 @@ var _default = function _default() {
     var number = Math.floor(Math.random() * 100);
     console.log("Question: ".concat(number));
 
-    var answer = _readlineSync["default"].question("Your answer: ");
+    var answer = _readlineSync["default"].question('Your answer: ');
 
-    var correctAnswer = isEven(number) ? "yes" : "no";
+    var correctAnswer = isEven(number) ? 'yes' : 'no';
 
-    if (answer !== 'yes' && answer !== "no") {
+    if (answer !== 'yes' && answer !== 'no') {
       console.log("'".concat(answer, "' is wrong answer ;(. Correct answer was '").concat(correctAnswer, "'."));
       console.log("Let's try again, ".concat(userName, "!"));
       return;
     }
 
     if (answer === correctAnswer) {
-      console.log("Correct!");
+      console.log('Correct!');
       correctAnswers += 1;
     } else {
       console.log("'".concat(answer, "' is wrong answer ;(. Correct answer was '").concat(correctAnswer, "'."));

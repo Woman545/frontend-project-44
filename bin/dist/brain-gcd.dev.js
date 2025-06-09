@@ -3,6 +3,8 @@
 
 var _gcd = _interopRequireDefault(require('../src/games/gcd.js'))
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj } }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj }
+}
 
-(0, _gcd['default'])()
+(0, _gcd.default)()

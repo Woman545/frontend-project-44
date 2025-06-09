@@ -24,7 +24,7 @@ var isPrime = function isPrime(num) {
 var generateRound = function generateRound() {
   var number = (0, _random["default"])(1, 100);
   var question = number.toString();
-  var correctAnswer = isPrime(number) ? "yes" : "no";
+  var correctAnswer = isPrime(number) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 

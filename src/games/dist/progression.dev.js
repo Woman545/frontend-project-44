@@ -11,7 +11,7 @@ var _index = _interopRequireDefault(require("../index.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var description = "What number is missing in the progression?";
+var description = 'What number is missing in the progression?';
 
 var generateRound = function generateRound() {
   var start = (0, _random["default"])(1, 10);
@@ -25,7 +25,7 @@ var generateRound = function generateRound() {
 
   var hiddenIndex = (0, _random["default"])(0, length - 1);
   var correctAnswer = String(progression[hiddenIndex]);
-  progression[hiddenIndex] = "..";
+  progression[hiddenIndex] = '..';
   var question = progression.join(' ');
   return [question, correctAnswer];
 };

@@ -1,13 +1,12 @@
-"use strict"
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-})
-exports["default"] = void 0
+Object.defineProperty(exports, '__esModule', {
+  value: true,
+});
 
-var getRandomNumber = function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
+const getRandomNumber = function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
-var _default = getRandomNumber
-exports["default"] = _default
+const _default = getRandomNumber;
+exports.default = _default;
